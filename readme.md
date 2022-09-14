@@ -1,15 +1,13 @@
 ## Flashcards
 
-📝 `NOTE:` Paste the README templates for each subsequent lab here at the top, (i.e. lab 2, 3, 4). This will show a history of your development process including which users stories you completed and how your app looked and functioned at each step.
-
 ## Lab 1
 
 ### App Description
-Simple flashcard app that reveals the answer to the question when the card is tapped.
+Simple flashcard app that reveals the answer to the question when the card is tapped. The card can be toggled between the question and the answer by clicking on the card.
 
 ### App Walk-through
 
-<img src="https://i.imgur.com/jt0W1np.gif" width=200><br>
+<img src="https://i.imgur.com/VB3ilee.gif" width=200><br>
 
 ## Required
 - [x] Create New Project in Xcode
@@ -18,7 +16,8 @@ Simple flashcard app that reveals the answer to the question when the card is ta
 - [x] Build in logic to show the answer side when the card is tapped
 - [x] Push code to GitHub
 ## Optional
-- [ ] Toggle the flashcard between the question side and the answer side
+- [x] Toggle the flashcard between the question side and the answer side
 - [ ] Style the question and answer side of the card to better distinguish between the two sides
 - [ ] Add selectable multiple choice answers beneath the card
+
 
