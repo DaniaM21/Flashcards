@@ -21,4 +21,3 @@ Flashcard app that reveals the answer to the question when the card is tapped. T
 - [ ] Add selectable multiple choice answers beneath the card
 
 
-
