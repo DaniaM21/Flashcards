@@ -16,8 +16,6 @@ class CreationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func didTapOnCancel(_ sender: Any) {
@@ -32,11 +30,24 @@ class CreationViewController: UIViewController {
         // Get the text in the answer text field
         let answerText = answerTextField.text
         
-        // Call the function to update the flashcard
-        flashcardsController.updateFlashcard(question: questionText!, answer: answerText!)
-        
-        // Dismiss
-        dismiss(animated: true)
+        // Check if text fields empty
+        if questionText == nil || answerText == nil || questionText!.isEmpty || answerText!.isEmpty {
+            
+            // Show error
+            let alert = UIAlertController(title: "Missing text", message: "You need to enter both a question and an answer", preferredStyle: .alert)
+            present(alert, animated: true)
+            
+            // Dismiss alert
+            let okAction = UIAlertAction(title: "Ok", style: .default)
+            alert.addAction(okAction)
+            
+        } else {
+            // Call the function to update the flashcard
+            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!)
+            
+            // Dismiss
+            dismiss(animated: true)
+        }
     }
 
 }
