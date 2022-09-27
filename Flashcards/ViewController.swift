@@ -57,6 +57,11 @@ class ViewController: UIViewController {
         // We set the flashcardsController property to self
         creationController.flashcardsController = self
         
+        // Sets existing question and answer directly onto CreationController's text fields
+        if segue.identifier == "EditSegue" {
+            creationController.initialQuestion = frontLabel.text
+            creationController.initialAnswer = backLabel.text
+        }
     }
 
     @IBAction func didTapOnFlashcard(_ sender: Any) {
